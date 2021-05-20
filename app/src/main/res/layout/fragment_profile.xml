@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:id="@+id/lnr_profile_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:gravity="center">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="40dp"
+            android:src="@drawable/himanshu" />
+    </LinearLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/lnr_profile_pic">
+    <RelativeLayout
+        android:id="@+id/name_lnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:fontFamily="monospace"
+            android:text="Himanshu Dania"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/add_bio_lnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/rec_round_layout_bar"
+        android:layout_below="@+id/name_lnr">
+
+        <TextView
+            android:id="@+id/bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="monospace"
+            android:text="+ Add Bio"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/edit_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/dob_lnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:layout_centerInParent="true"
+        android:paddingBottom="10dp"
+        android:background="@drawable/rec_round_layout_bar"
+        android:layout_below="@+id/add_bio_lnr">
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="monospace"
+            android:text="+ Add Date Of Birth"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/edit_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_no_lnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/rec_round_layout_bar"
+        android:layout_below="@+id/dob_lnr">
+
+        <TextView
+            android:id="@+id/phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="monospace"
+            android:text="+ Add Phone Number"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/edit_phone_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/email_id_lnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@drawable/rec_round_layout_bar"
+        android:layout_below="@+id/phone_no_lnr">
+
+        <TextView
+            android:id="@+id/email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="monospace"
+            android:text="+ Add Email Id"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/edit_email_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_edit_black_24dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+
+</RelativeLayout>

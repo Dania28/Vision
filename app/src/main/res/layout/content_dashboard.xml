@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Dashboard"
+    tools:showIn="@layout/activity_dashboard">
+
+    <LinearLayout
+        android:id="@+id/lnr1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnrsearch"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <Searchable
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#0088A0"
+                android:drawableStart="@drawable/ic_search_black_24dp"
+                android:ems="10"
+                android:hint="  Search Apps"
+                android:inputType="textPersonName"
+                android:textColor="#FFFFFF"
+                android:paddingLeft="10dp"
+                android:textColorHint="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/fb"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/fbround" />
+
+            <ImageView
+                android:id="@+id/insta"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/instaround" />
+
+            <ImageView
+                android:id="@+id/googleplus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/googleplusround" />
+
+            <ImageView
+                android:id="@+id/linkedin"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/linkedround" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr3"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp">
+
+
+            <ImageView
+                android:id="@+id/twitter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/twitterroundlogo" />
+
+            <ImageView
+                android:id="@+id/gmail"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/gmailroundlogo" />
+
+            <ImageView
+                android:id="@+id/flipkart"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/flipkartroundlogo" />
+
+            <ImageView
+                android:id="@+id/quora"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:srcCompat="@drawable/quoraroundlogo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr4"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="100dp"
+                android:clickable="true"
+                android:onClick="getSpeechInput"
+                app:srcCompat="@drawable/ic_mic_black_24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

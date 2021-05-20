@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dania.vision">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".n"></activity>
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Addnewid"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_addnewid"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".fingerprint2"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fingerprint2"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".fingerprint3"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fingerprint3"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Fb"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fb"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".insta"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_insta"
+            android:theme="@style/AppTheme3" />
+        <activity
+            android:name=".linkedin"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_linkedin"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Googleplus"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_googleplus"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".twitter"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_twitter"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Gmail"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_gmail"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Flipkart"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_flipkart"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Quora"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_quora"
+            android:theme="@style/FullscreenTheme" />
+
+        <meta-data
+            android:name="com.google.android.gms.car.application"
+            android:resource="@xml/automotive_app_desc" />
+
+        <activity
+            android:name=".userdata"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_userdata"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".cllgid1"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_cllgid1"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".Dashboard1"
+            android:label="@string/title_activity_dashboard1" />
+    </application>
+
+</manifest>
